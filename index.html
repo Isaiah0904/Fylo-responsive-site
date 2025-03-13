@@ -8,23 +8,38 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 <body>
   <header>
     <div class="header-container">
-      <div class="header-carrier">
-        <div class="left-header">
-          <img src="images/logo.svg">
-        </div>
-        <div class="right-header"> 
+      <nav>
+        <a href="index.html"><img src="images/logo.svg"></a>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="#">Features</a></li>
-            <li><a href="#">Teams</a></li>
+            <li><a href="#">Team</a></li>
             <li><a href="#">Sign In</a></li>
           </ul>
+        </div>
+      </nav>
+      <div class="body-carrier-1">
+        <div class="body-carrier">
+          <div class="image-carrier">
+            <img src="images/illustration-intro.png">
+          </div>
+          <div class="illustration-description">
+            <h1>All your files in one secure location, accessible anywhere</h1>
+          </div>
         </div>
       </div>
     </div>
   </header>
+  <script src="index.js"></script>
 </body>
 </html>
