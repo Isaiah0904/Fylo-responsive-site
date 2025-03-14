@@ -3,7 +3,7 @@
   padding: 0;
 }
 body{
-  background: hsl(218, 28%, 13%);
+  background: hsl(217, 28%, 15%);
   max-width: 1440px;
 }
 .header-container{
@@ -29,24 +29,91 @@ color: white;
 font-family: Raleway;
 font-size: 14px;
 }
-.body-carrier-1{
+.body-carrier{
   width: 100%;
   font-family: "Raleway", sans-serif;
   color: white;
   font-weight: 100;
+  position: relative;
 }
-.body-carrier{
+.body-carrier-1{
   width: 80%;
   text-align: center;
-  margin: auto
+  margin: auto;
+}
+.body-carrier-2{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  font-family: "Open Sans", sans-serif;
 }
 .illustration-description{
   width: 65%;
   text-align: center;
   margin: auto;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 .header-container .fa{
   display: none;
+}
+.curve-container{
+  width: 100%;
+  margin-top: -8%;
+  z-index: -2;
+  position: sticky;
+}
+.curve-container img{
+  width: 100%;
+}
+.illustration-paragraph{
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+}
+.get-started-button{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.get-started-button button{
+  width: 20%;
+  padding: 10px 15px;
+  color: white;
+  font-family: Raleway;
+  background: linear-gradient(45deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+}
+.grid-box{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  width: 100%;
+  column-gap: 200px;
+  row-gap: 120px;
+}
+.grid-image{
+  margin-bottom: 15px;
+}
+.grid-description{
+  text-align: center;
+  margin: auto;
+  width: 85%;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.grid-paragraph{
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+.grid-box-1{
 }
 
 @media(max-width: 800px){
@@ -69,8 +136,15 @@ font-size: 14px;
     width: 120px;
   }
   .illustration-description{
-    width: 80%;
+    width: 90%;
     font-size: 13px;
+  }
+  .illustration-paragraph{
+    width: 90%;
+  }
+  .curve-container{
+    margin-top: -25%;
+
   }
 }
 
@@ -108,8 +182,11 @@ font-size: 14px;
   .image-carrier img{
     width: 260px;
   }
-  .illustration-description{
+  .illustration-description, .illustration-paragraph{
     width: 90%;
     font-size: 11px;
+  }
+  .curve-container{
+    margin-top: -85%;
   }
 }
